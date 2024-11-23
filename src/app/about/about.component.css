@@ -1,0 +1,53 @@
+/* Main content styles */
+.main {
+    font-family: monospace;
+    color: white;
+    margin-top: 75px; /* Push content below navbar */
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Ensures content is clipped when it scrolls behind the navbar */
+}
+
+a{
+    color: pink;
+}
+
+/* Section styles */
+.bio, .pets, .hobbies {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Center and constrain text width */
+p {
+    max-width: 550px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+/* List styles */
+ul {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    gap: 10px; /* Optional: Add space between items */
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px; /* Adjust width of the grid */
+    text-align: center; /* Center-align text within each grid item */
+}
+
+ul li {
+    margin-bottom: 10px;
+    background-color: #444; /* Optional: Add background color */
+    padding: 10px; /* Optional: Add padding for spacing */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    color: white;
+    font-size: 13px;
+}
+
+/* Text disappearing effect */
+p, ul {
+    position: relative;
+    z-index: 1; /* Ensures text is properly layered and disappears under the navbar */
+}
