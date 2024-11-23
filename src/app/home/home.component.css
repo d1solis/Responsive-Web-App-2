@@ -1,0 +1,72 @@
+#home {
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    position: absolute;
+    left: 300px;
+    bottom: 150px;
+}
+
+b{
+    color: rgb(255, 123, 152);
+    font-weight: 1000;
+}
+
+.thin-text {
+    font-weight: lighter;
+}
+
+img {
+    position: absolute;
+    float: right;
+    width: 350px;
+    height: 350px;
+    right: 350px;
+    bottom: 100px;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+ul {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+}
+
+.scroll-box {
+    width: 300px; /* Adjust the width */
+    height: 50px; /* Adjust the height to fit one list item */
+    overflow: hidden;
+    position: relative;
+    left: 300px;
+    top: 400px;
+}
+
+.scroll-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    animation: scroll 7s linear infinite; /* Adjust duration as needed */
+}
+
+.scroll-content li {
+    height: 50px; /* Match the height of the container */
+    display: flex;
+    align-items: left; /* Center the text vertically */
+    justify-content: left; /* Center the text horizontally */
+}
+
+@keyframes scroll {
+    0% { transform: translateY(0px); } /* Show the first item */
+    25% { transform: translateY(0); } /* Pause on the first item */
+    33% { transform: translateY(-50px); } /* Move to the second item */
+    58% { transform: translateY(-50px); } /* Pause on the second item */
+    66% { transform: translateY(-100px); } /* Move to the third item */
+    91% { transform: translateY(-100px); } /* Pause on the third item */
+    100% { transform: translateY(-150px); } /* Move to the fourth item */
+}

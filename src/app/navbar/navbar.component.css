@@ -1,0 +1,52 @@
+h1{
+    font-family: monospace;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+h1 a{
+    color: rgb(255, 123, 152);
+    text-decoration: none;
+}
+
+h1 a:hover{
+    color: white;
+}
+
+ul{
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    top: 40px;
+    left: 650px;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    text-decoration: none;
+}
+
+nav a {
+    color: white; /* Makes navigation links white */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Ensure proper spacing and alignment for nav */
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes items align horizontally */
+    gap: 30px; /* Adds space between links */
+}
+
+nav ul a:hover {
+    color: rgb(255, 123, 152);
+}
