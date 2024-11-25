@@ -18,7 +18,7 @@
     margin-bottom: 10px;
 }
 
-.email h1 {
+h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -40,7 +40,7 @@
     margin-bottom: 30px;
 }
 
-.socials h1 {
+h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -65,7 +65,7 @@
 }
 
 /* Form styles */
-.form {
+.myform {
     border-radius: 10px;
     background-color: #2a2a2a; /* Dark background for form */
     padding: 15px;
@@ -77,7 +77,7 @@
 
 .formTitle h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -96,6 +96,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1rem;
+    background-color: #2a2a2a;
 }
 
 input[type=text]:hover {

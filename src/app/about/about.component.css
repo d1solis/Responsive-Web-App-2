@@ -6,6 +6,7 @@
     padding: 20px;
     position: relative;
     overflow: hidden; /* Ensures content is clipped when it scrolls behind the navbar */
+    font-size: 17px;
 }
 
 a{
