@@ -119,3 +119,49 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(223, 91, 120);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        margin-top: 50px; /* Adjust margin for smaller screens */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Slightly smaller title font */
+    }
+
+    .email p a,
+    .socials li a {
+        font-size: 1rem; /* Smaller font for links */
+    }
+
+    .myform {
+        padding: 10px; /* Reduce padding for form */
+    }
+
+    input[type="text"], input[type="submit"] {
+        font-size: 0.9rem; /* Smaller input font */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Reduce title font size further */
+    }
+
+    .email p a,
+    .socials li a {
+        font-size: 0.9rem; /* Smaller font for links on mobile */
+    }
+
+    .myform {
+        padding: 8px; /* Compact padding for mobile */
+    }
+
+    input[type="text"], input[type="submit"] {
+        font-size: 0.8rem; /* Smaller input font */
+        padding: 8px;
+    }
+}

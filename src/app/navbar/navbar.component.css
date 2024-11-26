@@ -50,3 +50,38 @@ nav ul {
 nav ul a:hover {
     color: rgb(255, 123, 152);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust h1 for smaller screens */
+    h1 {
+        font-size: 1.5rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Center and stack the navigation for tablets */
+    ul {
+        flex-direction: column; /* Stack links vertically */
+        top: 70px; /* Adjust position below title */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center-align */
+        font-size: 15px; /* Adjust font size */
+        gap: 20px; /* Reduce space between links */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust for mobile screens */
+    h1 {
+        font-size: 1.2rem;
+        top: 5px;
+        left: 5px;
+    }
+
+    ul {
+        top: 60px; /* Adjust position for mobile */
+        font-size: 14px; /* Smaller font size */
+        gap: 15px; /* Compact spacing */
+    }
+}

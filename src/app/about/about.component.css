@@ -52,3 +52,66 @@ p, ul {
     position: relative;
     z-index: 1; /* Ensures text is properly layered and disappears under the navbar */
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main {
+        font-size: 16px; /* Slightly smaller font for large tablets */
+        padding: 15px; /* Adjust padding */
+    }
+
+    p {
+        max-width: 500px; /* Reduce text width for narrower screens */
+    }
+
+    ul {
+        grid-template-columns: repeat(3, 1fr); /* Adjust grid to 3 columns */
+        max-width: 600px; /* Narrower grid for large tablets */
+    }
+
+    ul li {
+        font-size: 12px; /* Slightly smaller font for list items */
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        font-size: 15px; /* Smaller font for tablets */
+        padding: 10px;
+    }
+
+    p {
+        max-width: 450px; /* Reduce text width further */
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns */
+        max-width: 500px; /* Narrower grid for tablets */
+    }
+
+    ul li {
+        font-size: 11px; /* Smaller font for list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        font-size: 14px; /* Smaller font for mobile */
+        padding: 8px;
+    }
+
+    p {
+        max-width: 90%; /* Allow text to take up most of the screen width */
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    ul {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        max-width: 300px; /* Narrow grid for mobile */
+    }
+
+    ul li {
+        font-size: 10px; /* Smaller font for mobile */
+        padding: 8px; /* Compact padding */
+    }
+}

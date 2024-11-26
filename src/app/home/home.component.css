@@ -70,3 +70,62 @@ li {
     91% { transform: translateY(-100px); } /* Pause on the third item */
     100% { transform: translateY(-150px); } /* Move to the fourth item */
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    #home {
+        left: 150px; /* Adjust for smaller screens */
+        font-size: 28px; /* Slightly smaller font */
+    }
+
+    img {
+        right: 200px; /* Adjust image position */
+        width: 300px;
+        height: 300px;
+    }
+
+    .scroll-box {
+        left: 150px; /* Adjust scroll box position */
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        left: 50px; /* Adjust text for tablet screens */
+        font-size: 25px; /* Smaller font size */
+    }
+
+    img {
+        right: 100px; /* Bring image closer */
+        width: 250px;
+        height: 250px;
+    }
+
+    .scroll-box {
+        left: 50px; /* Adjust scroll box alignment */
+        width: 250px; /* Narrower scroll box */
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        position: static; /* Stack content naturally */
+        font-size: 20px; /* Smaller font for mobile */
+        text-align: center; /* Center-align text */
+        margin-top: 20px;
+    }
+
+    img {
+        position: static; /* Stack image naturally */
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        display: block; /* Center image */
+    }
+
+    .scroll-box {
+        position: static; /* Stack naturally */
+        width: 200px; /* Narrower scroll box */
+        margin: 20px auto;
+    }
+}
