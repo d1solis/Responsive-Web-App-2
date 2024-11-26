@@ -4,9 +4,8 @@
             Email Me
         </h1>
 
-        <p>
-            <a href="mailto:dalilaeileensolis&#64;gmail.com">dalilaeileensolis&#64;gmail.com</a>
-        </p>
+        <p *ngIf="showEmail">{{ email }}</p>
+        <button (click)="toggleEmail()">Toggle Email</button>
     </div>
 
     <div class="socials">
@@ -29,21 +28,27 @@
     </h1>
 
     <div class="myform">
-        <form>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name.."/>
+        <form (ngSubmit)="onSubmit()">
+            <label for="userName">First Name:</label>
+            <input [(ngModel)]="userName" id="userName" name="userName" type="text" placeholder="Enter your first name" />
             <br>
-
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+    
+            <label for="userLastName">Last Name:</label>
+            <input [(ngModel)]="userLastName" id="userLastName" name="userLastName" type="text" placeholder="Enter your last name" />
             <br>
-
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="emailadress" placeholder="Your email.."/>
+    
+            <label for="userEmail">Email:</label>
+            <input [(ngModel)]="userEmail" id="userEmail" name="userEmail" type="text" placeholder="Enter your email" />
             <br>
-
-            <input type="submit" value="Submit" />
+    
+            <button type="submit">Submit</button>
         </form>
+    
+        <!-- Show the message only if the form is submitted -->
+        <p *ngIf="formSubmitted">
+            Thank you, {{ userName }} {{ userLastName }}! We will contact you at {{ userEmail }}.
+        </p>
     </div>
+    
 </div>
 

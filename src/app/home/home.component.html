@@ -1,6 +1,8 @@
 <div id="home">
     <h1>
-        <div class="thin-text">Hey, <br> I'm <b>Dalila</b></div>
+        <div class="thin-text">
+            Hey, <br> I'm <b>{{ name }}</b>
+        </div>
     </h1>
 </div>
 
@@ -8,9 +10,6 @@
 
 <div class="scroll-box">
     <ul class="scroll-content">
-        <li>Aspiring Software Engineer</li>
-        <li>UC San Diego Alumni</li>
-        <li>Hobbyist Artist</li>
-        <li>Aspiring Software Engineer</li>
+        <li *ngFor="let role of roles">{{ role }}</li>
     </ul>
 </div>

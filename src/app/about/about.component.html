@@ -46,42 +46,7 @@
         </p>
     
         <ul>
-            <li>
-                Gaming 🎮
-            </li>
-            <li>
-                Drawing ✏️
-            </li>
-            <li>
-                Painting 🎨
-            </li>
-            <li>
-                Yoga 🧘‍♀️
-            </li>
-            <li>
-                Baking 🍪
-            </li>
-            <li>
-                Photography 📸
-            </li>
-            <li>
-                Music 🎧
-            </li>
-            <li>
-                Swimming 🏊‍♀️
-            </li>
-            <li>
-                Pin Collecting 📌
-            </li>
-            <li>
-                Stickers 🙂
-            </li>
-            <li>
-                Plushies 🧸
-            </li>
-            <li>
-                Napping 💤
-            </li>
+            <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
         </ul>
     </div>
 
